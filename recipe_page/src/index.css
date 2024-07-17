@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-outfit{
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-young-serif{
+  font-family: 'Young Serif', serif;
+}
+
+ul{
+  list-style-type: circle;
+  margin-left: 18px;
+}
+
+ol{
+  list-style-type: decimal;
+  margin-left: 18px;
+}
