@@ -247,36 +247,138 @@ p, label, li{
 
 /* Media Queries ----------------------------------------------------------------------- */
 
-@media only screen
-    and (min-width: 1200px){
-        .header{
-            padding: 40px 100px;
-        }
 
-        .header .logo {
-            width: 150px;
-        }
+/* Tablet View (min-width: 768px) */
+@media (min-width: 768px) {
+    .header {
+        padding: 20px 30px;
+    }
 
-        .hero{
-            padding: 100px 150px;
-        }
+    .hero {
+        padding: 100px 100px;
+    }
 
-        .hero h1{
-            font-size: 2.4rem;
-        }
+    .hero h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 
-        .hero p{
-            width: 45%;
-        }
+    .hero p {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+        width: 55%;
+    }
 
-        .hero button{
-            padding: 20px 50px;
-        }
+    .hero img {
+        width: 80%;
+        margin-top: 50px;
+    }
 
-        .hero img{
-            width: 70%;
-        }
+    .stats {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 50px 100px;
+    }
 
+    .stat {
+        width: 30%;
+    }
+
+    .feature-content {
+        flex-direction: row;
+        text-align: left;
+        padding: 0px 70px;
+    }
+
+    .f1 .feature-content, .f3 .feature-content{
+        flex-direction: row-reverse;
+    }
+
+    .feature-img {
+        width: 80%;
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
+
+    .feature-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .feature h3{
+        font-size: 2rem;
+    }
+
+    .cta {
+        padding: 50px 100px;
+        min-height: 70vh;
+    }
+
+    .footer-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 50px 100px;
+    }
+
+    .footer-info .logo {
+        margin: 0 0 30px 0;
+    }
+
+    .footer-info, .footer-newsletter{
+        width: 40%;
+    }
+
+    .footer input {
+        width: 60%;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .footer button {
+        width: 30%;
+        display: inline-block;
+        float: none;
+        padding: 10px;
+    }
 }
+
+/* Desktop View (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .header {
+        padding: 20px 60px;
+    }
+
+    .hero {
+        padding: 50px 150px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .stats {
+        padding: 50px 150px;
+    }
+
+    .feature-content {
+        padding: 100px 150px;
+    }
+
+    .cta {
+        padding: 50px 150px;
+        min-height: 60vh;
+    }
+
+    .footer-content {
+        padding: 50px 150px;
+    }
+}
+
 
 
