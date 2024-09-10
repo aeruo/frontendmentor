@@ -1,0 +1,282 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary colors */
+    --pink: hsl(322, 100%, 66%);
+    --light_pink: hsl(321, 100%, 78%);
+    --light_red: hsl(0, 100%, 63%);
+
+    /* Neutral Colors */
+    --dark_cyan: hsl(192, 100%, 9%);
+    --pale_blue: hsl(207, 100%, 98%);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, h7{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body text */
+p, label, li{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header Section ---------------------------------------------------------------- */
+
+.header{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo{
+    width: 100px;
+}
+
+.header button {
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 2px solid var(--pink);
+    color:var(--pink);
+    background-color: transparent;
+}
+
+/* Hero Section ---------------------------------------------------------------- */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 1.5rem;
+    color: rgb(14, 14, 14);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hero p{
+    font-size: 1rem;
+    color: rgb(66, 66, 66);
+    margin-bottom: 30px;
+}
+
+.hero button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid var(--pink);
+    color:white;
+    background-color: var(--pink);
+    margin-bottom: 25px;
+}
+
+.hero img{
+    margin-top: 25px;
+    width: 99%;
+}
+
+/* Stats Section ---------------------------------------------------------------- */
+
+.stats{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.stat{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    padding: 50px 0px;
+}
+
+.stat img{
+    width: 35px;
+}
+
+.stat h2{
+    font-size: 4rem;
+}
+
+.stat p{
+    color: rgb(66, 66, 66)
+}
+
+/* Features Section ---------------------------------------------------------------- */
+
+.feature{
+    width: 100%;
+}
+
+.feature img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.f-1 .feature-content, .f-3 .feature-content{
+    background-color: var(--pale_blue);
+}
+
+.feature-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.feature-image{
+    width: 70%;
+    margin-bottom: 50px;
+}
+
+.feature-content h4{
+    font-size: 1.6rem;
+    color: rgb(14, 14, 14);
+    margin-bottom: 25px;
+}
+
+.feature-content p{
+    color: rgb(66, 66, 66);
+}
+
+/* Cta Section ---------------------------------------------------------------- */
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 50px;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.cta h3{
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+.cta button{
+    padding: 15px 25px;
+    border-radius: 40px;
+    border: 2px solid var(--pink);
+    color:white;
+    background-color: var(--pink);
+    margin-bottom: 25px;
+}
+
+/* Footer Section ---------------------------------------------------------------- */
+
+.footer .border{
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.footer-subscribe, .footer-info{
+    background-color: var(--dark_cyan);
+    padding: 50px;
+}
+
+.footer h5{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.footer p{
+    color: rgb(216, 216, 216);
+    margin-bottom: 40px;
+}
+
+.footer input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer button{
+    width: 40%;
+    float: right;
+    padding: 15px;
+    background-color: var(--pink);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-info img.logo{
+    margin: 70px 0px 30px 0px;
+}
+
+.footer ul{
+    list-style: none;
+    color: white;
+}
+
+.footer ul li{
+    margin-bottom: 20px;
+}
+
+.footer ul li img{
+    margin-right: 20px;
+}
+
+.footer i{
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Media Queries ----------------------------------------------------------------------- */
+
+@media only screen
+    and (min-width: 1200px){
+        .header{
+            padding: 40px 100px;
+        }
+
+        .header .logo {
+            width: 150px;
+        }
+
+        .hero{
+            padding: 100px 150px;
+        }
+
+        .hero h1{
+            font-size: 2.4rem;
+        }
+
+        .hero p{
+            width: 45%;
+        }
+
+        .hero button{
+            padding: 20px 50px;
+        }
+
+        .hero img{
+            width: 70%;
+        }
+
+}
+
+
